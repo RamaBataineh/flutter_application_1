@@ -45,6 +45,7 @@ home: Scaffold(
       child: Column(children: [
         Text('text 1'),
         Text('text 2'),
+        Image.network('https://miro.medium.com/v2/resize:fit:1400/1*Bd8xsEbK8JNWBU0Fq2srFA.png'),
         //column
       //عرض اكتر من wedget ع اكتر من سطر
       //row عرض اكتر من wedget ع نفس السطر
