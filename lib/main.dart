@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 void main(){
 runApp(Myapp1());
 
@@ -94,6 +95,7 @@ home: Scaffold(
  
 }}
 class Myapp1 extends StatelessWidget{
+  double _val=20;
 @override 
 Widget build (BuildContext context){
  
@@ -112,26 +114,36 @@ child: //Image.network('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEA
 /*Text('RAMA BARITHDAY',
 style: TextStyle (fontSize: 40),),
 color: Color.fromARGB(255, 7, 255, 251),*/
-TextField(
+/*TextField(
   obscureText: true,
   decoration: InputDecoration(
 labelText: 'Test',
-hintText: 'email',
-icon: Icon(Icons.email),
+hintText: 'phone',
+icon: Icon(Icons.phone),
 
 
   ),
-keyboardType: TextInputType.text,
+  inputFormatters: [LengthLimitingTextInputFormatter(10)],
+keyboardType: TextInputType.number,
 
 
 
 
-),
+),*/
 /*Checkbox(
   value: true,
   onChanged: (value)=>{
     print(value)},
 ),*/
+Slider(min:0,
+  max: 100,
+   value: _val,
+   onChanged: (value) {
+     
+   },
+   //onChanged: (double (value) => _val=value),
+   )
+
 ), 
                                            //size button
 floatingActionButton: FloatingActionButton.large(
