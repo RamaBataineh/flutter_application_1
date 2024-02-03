@@ -4,8 +4,10 @@ padding:
 button 
 بدي اكبر حجمها وحدودها
  من غير ما أثر ع الكلمه الي مكتوبه فيها
+ مسافه بين العنصر وحدوده الخاصه 
  Margin :
  مساحه بين حدود عنصر وحدود عنصر اخر
  center one child 
+ left,right,top,buttom
  colum,listview more than one child
   
