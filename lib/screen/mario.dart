@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 void main(){
-runApp(Myapp());
+runApp(Myapp3());
 
 
 
 
 }
-class Myapp2 extends StatefulWidget{
+class Myapp1 extends StatefulWidget{
+  final String routeName='/mario';
    
 @override
 
@@ -14,7 +15,7 @@ _Myapp2State createState()=>_Myapp2State();
 
 
 }
-class _Myapp2State extends State<Myapp2>{
+class _Myapp2State extends State<Myapp1>{
    String v='assets/m1.jfif';
   Color _color=Colors.amber;
   Color _newcolor=Colors.red;
@@ -106,8 +107,7 @@ body: Container(
              // _newcolor=Color.fromARGB(31, 0, 0, 0);
              v='assets/mll.jfif';
             
-             if(posL>0){
-           
+             if(posL>0){  
         posL-=10;
              }
              if(posL==0&&posR<=300){
@@ -168,7 +168,7 @@ print(posL);
   );
  }
 }
-class Myapp extends StatelessWidget{
+class Myapp3 extends StatelessWidget{
 @override 
 Widget build (BuildContext context){
   return MaterialApp(
@@ -178,6 +178,6 @@ Widget build (BuildContext context){
     ),
    
       
-home: Myapp2(),
+home: Myapp1(),
     );
 }}
